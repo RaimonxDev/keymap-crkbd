@@ -205,11 +205,11 @@ LCTL_T(LA_LINEQ), LA_Z,   LA_X,    LA_C,    LA_V,    LA_B,                      
 
 /*
       .------------------------------------------------.                         .-------------------------------------------------.
-      |    !   |   =   |  UP  |   #   |   $    |   %   |                         |    &   |   |   |   /   |   *   |   `  | BACKSPC |
+  |SHIF/CONTROL, ! |   =   |  UP  |   #   |   $    |   %   |                     |    &   |   |   |   /   |   *   |   `  | BACKSPC |
       |--------+-------+-------+-------+-------+-------|          _SYMB          |-------+-------+-------+-------+-------+---------|
-      |        |  LEFT |  DOWN|  RIGHT |       |       |                         |   {    |   }   |   \   |    ,  |   .  |         |
+      |  L SHIFT   |  LEFT |  DOWN|  RIGHT |       |       |                     |   {    |   }   |   (   |   )   |   .  |         |
       |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
-      |        |       |       |       |       |PSCREEN|                         |   [    |   ]   |       |   ¬   |   ~  |         |
+      |  L CTRL    |       |       |       |       |PSCREEN|                     |   [    |   ]   |    ,   |   .  |   \  |   ~     |
       '---------------------------------------------------------|       |----------------------------------------------------------'
                             |      ALT    |          |   SPACE  |       | SPACE | ENTER NUMP |   ALTGR   |
                             '-----------------------------------'       '--------------------------------'
@@ -217,11 +217,11 @@ LCTL_T(LA_LINEQ), LA_Z,   LA_X,    LA_C,    LA_V,    LA_B,                      
 
   [_SYMB] = LAYOUT_split_3x6_3(
 //  .-----------------------------------------------------.                    .-----------------------------------------------------.
-    C_S_T(LA_EXLM), LA_EQUAL, LA_UP, LA_HASH, LA_DOLLAR, LA_PERC,                LA_AMPR, LA_PIPE, KC_PSLS, KC_PAST, LA_GRAVE, LA_BSPC,
+ C_S_T(LA_EXLM), LA_EQUAL, LA_UP, LA_HASH, LA_DOLLAR, LA_PERC,                LA_AMPR, LA_PIPE, KC_PSLS, KC_PAST, LA_GRAVE, LA_BSPC,
 //  |--------+--------+--------+--------+--------+--------|     /* _SYMB */    |--------+--------+--------+--------+--------+--------|
-    LA_LSFT, LA_LEFT, LA_DOWN, LA_RIGHT , XXXXXXX , XXXXXXX,                    LA_LCBRC, LA_RCBRC, LA_BSLS, LA_COMM, LA_DOT, XXXXXXX,
+    LA_LSFT,   LA_LEFT,  LA_DOWN, LA_RIGHT,XXXXXXX , XXXXXXX,                    LA_LCBRC, LA_RCBRC, LA_LPRN , LA_RPRN, LA_DOT, XXXXXXX,
 //  |--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-    LA_LCTRL, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  LA_PSCR,                      LA_LSBRC, LA_RSBRC, XXXXXXX, LA_NEG, LA_TILDE, XXXXXXX,
+    LA_LCTRL, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  LA_PSCR,                    LA_LSBRC, LA_RSBRC, LA_COMM, LA_DOT, LA_BSLS , LA_TILDE,
 //  '--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------'
                                         LA_ALT, _______, LA_SPC,      LA_SPC, MT(NUMP,LA_ENT), LA_ALTGR
                                     //'----------------------------'  '---------------------------------'
@@ -229,25 +229,25 @@ LCTL_T(LA_LINEQ), LA_Z,   LA_X,    LA_C,    LA_V,    LA_B,                      
 
 /*
       .------------------------------------------------.                         .-------------------------------------------------.
-      |    (   |   )   |   1   |   2   |   3   |   ,   |                         |   -   |   +   |   7   |    8   |   9   | BACKSPC |
+      |    7   |   8   |   9   |       |       |   ,   |                         |   -   |   +   |       |        |       | BACKSPC |
       |--------+-------+-------+-------+-------+-------|          _NUMP          |-------+-------+-------+-------+-------+---------|
-      |    {   |   }   |   4   |   5   |   6   |   .   |                         |   /   |   *   |   4   |    5   |   6   |         |
+      |    4   |   5   |   6   |       |       |   .   |                         |   /   |   *   |   (   |    )   |       |         |
       |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
-      |    [   |   ]   |   7   |   8   |   9   |   0   |                         |   =   |   0   |   1   |    2   |   3   |         |
+      |    1   |   2   |   3   |       |       |       |                         |   =   |       |       |        |       |         |
       '---------------------------------------------------------|       |----------------------------------------------------------'
-                               |     ALT     | TAB SYMB | SPACE |       | SPACE |             |    ALTGR   |
+                               |     0     | TAB SYMB | SPACE |       | SPACE |             |    ALTGR   |
                                '--------------------------------'       '----------------------------------'
 */
 
   [_NUMP] = LAYOUT_split_3x6_3(
 //  .-----------------------------------------------------.                    .-----------------------------------------------------.
-     LA_LPRN,  LA_RPRN,  XXXXXXX, XXXXXXX, XXXXXXX, LA_COMM,                    LA_MINUS, LA_PLUS,  LA_7,   LA_7,     LA_9 ,  LA_BSPC,
+     LA_7,      LA_8,    LA_9,   XXXXXXX, XXXXXXX, LA_COMM,                     LA_MINUS, LA_PLUS, XXXXXXX, XXXXXXX, XXXXXXX ,LA_BSPC,
 //  |--------+--------+--------+--------+--------+--------|    /* _NUMP */     |--------+--------+--------+--------+--------+--------|
-     LA_LCBRC, LA_RCBRC,  XXXXXXX, XXXXXXX, XXXXXXX, LA_DOT,                    LA_SLASH, LA_ASTR,  LA_4,    LA_5,     LA_6,  XXXXXXX,
+     LA_4,     LA_5,    LA_6,    XXXXXXX, XXXXXXX, LA_DOT,                      LA_SLASH, LA_ASTR, LA_LPRN, LA_RPRN, XXXXXXX, XXXXXXX,
 //  |--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-     LA_LSBRC, LA_RSBRC,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   LA_EQUAL,  LA_0  ,  LA_1,    LA_2,     LA_3,  XXXXXXX,
+     LA_1,     LA_2,    LA_3,    XXXXXXX, XXXXXXX, XXXXXXX,                     LA_EQUAL,XXXXXXX , XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
 //  '--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------'
-                                  LA_ALT, MT(SYMB,LA_TAB), LA_SPC,    LA_SPC, _______, LA_ALTGR
+                                  LA_0, MT(SYMB,LA_TAB), LA_SPC,    LA_SPC, _______, LA_ALTGR
                                //'---------------------------------'  '--------------------------'
   ),
 
