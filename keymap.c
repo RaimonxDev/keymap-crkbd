@@ -241,11 +241,11 @@ LCTL_T(LA_LINEQ), LA_Z,   LA_X,    LA_C,    LA_V,    LA_B,                      
 
   [_NUMP] = LAYOUT_split_3x6_3(
 //  .-----------------------------------------------------.                    .-----------------------------------------------------.
-     LA_LPRN,  LA_RPRN,  XXXXXXX, XXXXXXX, XXXXXXX, LA_COMM,                    LA_MINUS, LA_PLUS,  LA_7,   LA_7,     LA_9    LA_BSPC,
+     LA_LPRN,  LA_RPRN,  XXXXXXX, XXXXXXX, XXXXXXX, LA_COMM,                    LA_MINUS, LA_PLUS,  LA_7,   LA_7,     LA_9 ,  LA_BSPC,
 //  |--------+--------+--------+--------+--------+--------|    /* _NUMP */     |--------+--------+--------+--------+--------+--------|
-     LA_LCBRC, LA_RCBRC,  XXXXXXX, XXXXXXX, XXXXXXX, LA_DOT,                    LA_SLASH, LA_ASTR,  LA_4,    LA_5,     LA_6,    XXXXXXX,
+     LA_LCBRC, LA_RCBRC,  XXXXXXX, XXXXXXX, XXXXXXX, LA_DOT,                    LA_SLASH, LA_ASTR,  LA_4,    LA_5,     LA_6,  XXXXXXX,
 //  |--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-     LA_LSBRC, LA_RSBRC,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   LA_EQUAL,  LA_0  ,  LA_1,    LA_2,     LA_3,    XXXXXXX,
+     LA_LSBRC, LA_RSBRC,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   LA_EQUAL,  LA_0  ,  LA_1,    LA_2,     LA_3,  XXXXXXX,
 //  '--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------'
                                   LA_ALT, MT(SYMB,LA_TAB), LA_SPC,    LA_SPC, _______, LA_ALTGR
                                //'---------------------------------'  '--------------------------'
