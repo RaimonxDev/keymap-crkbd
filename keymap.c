@@ -219,9 +219,9 @@ LCTL_T(LA_LINEQ), LA_Z,   LA_X,    LA_C,    LA_V,    LA_B,                      
 //  .-----------------------------------------------------.                    .-----------------------------------------------------.
     LA_EXLM, LA_EXLM, LA_UP, LA_HASH, LA_DOLLAR, LA_PERC,                     LA_AMPR, LA_PIPE, LA_SLASH,  LA_ASTR, LA_GRAVE, LA_BSPC,
 //  |--------+--------+--------+--------+--------+--------|     /* _SYMB */    |--------+--------+--------+--------+--------+--------|
-    _______, LA_LEFT, LA_DOWN, LA_RIGHT , XXXXXXX , XXXXXXX,                    LA_LCBRC, LA_RCBRC, LA_BSLS, LA_COMM, LA_DOT, XXXXXXX,
+    LA_LSFT, LA_LEFT, LA_DOWN, LA_RIGHT , XXXXXXX , XXXXXXX,                    LA_LCBRC, LA_RCBRC, LA_BSLS, LA_COMM, LA_DOT, XXXXXXX,
 //  |--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-    _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  LA_PSCR,                      LA_LSBRC, LA_RSBRC, XXXXXXX, LA_NEG, LA_TILDE, XXXXXXX,
+    LA_LCTRL, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  LA_PSCR,                      LA_LSBRC, LA_RSBRC, XXXXXXX, LA_NEG, LA_TILDE, XXXXXXX,
 //  '--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------'
                                         LA_ALT, _______, LA_SPC,      LA_SPC, MT(NUMP,LA_ENT), LA_ALTGR
                                     //'----------------------------'  '---------------------------------'
