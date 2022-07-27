@@ -98,6 +98,7 @@
 
 #define LA_AT                   ALGR(KC_Q)     // @
 #define LA_EXLM                 LSFT(KC_1)     // !
+#define LA_EXLM_R               RSFT(KC_1)     // !
 #define LA_EXLM_INV             LSFT(KC_EQL)   // ¡
 #define LA_QUEST                LSFT(KC_MINS)  // ?
 #define LA_QUEST_INV            KC_EQL         // ¿
@@ -207,7 +208,7 @@ LCTL_T(LA_LINEQ), LA_Z,   LA_X,    LA_C,    LA_V,    LA_B,                      
       .------------------------------------------------.                         .-------------------------------------------------.
   |SHIF/CONTROL, ! |   =   |  UP  |   #   |   $    |   %   |                     |    &   |   |   |   /   |   *   |   `  | BACKSPC |
       |--------+-------+-------+-------+-------+-------|          _SYMB          |-------+-------+-------+-------+-------+---------|
-      |  L SHIFT   |  LEFT |  DOWN|  RIGHT |       |       |                     |   {    |   }   |   (   |   )   |   .  |         |
+      |  L SHIFT   |  LEFT |  DOWN|  RIGHT |       |       |                     |   {    |   }   |   (   |   )   |   .  | R SHIFT |
       |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
       |  L CTRL    |       |       |       |       |PSCREEN|                     |   [    |   ]   |    ,   |   .  |   \  |   ~     |
       '---------------------------------------------------------|       |----------------------------------------------------------'
@@ -217,9 +218,9 @@ LCTL_T(LA_LINEQ), LA_Z,   LA_X,    LA_C,    LA_V,    LA_B,                      
 
   [_SYMB] = LAYOUT_split_3x6_3(
 //  .-----------------------------------------------------.                    .-----------------------------------------------------.
- C_S_T(LA_EXLM), LA_EQUAL, LA_UP, LA_HASH, LA_DOLLAR, LA_PERC,                LA_AMPR, LA_PIPE, KC_PSLS, KC_PAST, LA_GRAVE, LA_BSPC,
+ C_S_T(LA_EXLM_R), LA_EQUAL, LA_UP, LA_HASH, LA_DOLLAR, LA_PERC,                LA_AMPR, LA_PIPE, KC_PSLS, KC_PAST, LA_GRAVE, LA_BSPC,
 //  |--------+--------+--------+--------+--------+--------|     /* _SYMB */    |--------+--------+--------+--------+--------+--------|
-    LA_LSFT,   LA_LEFT,  LA_DOWN, LA_RIGHT,XXXXXXX , XXXXXXX,                    LA_LCBRC, LA_RCBRC, LA_LPRN , LA_RPRN, LA_DOT, XXXXXXX,
+    LA_LSFT,   LA_LEFT,  LA_DOWN, LA_RIGHT,XXXXXXX , XXXXXXX,                    LA_LCBRC, LA_RCBRC, LA_LPRN , LA_RPRN, LA_DOT, LA_RSFT,
 //  |--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
     LA_LCTRL, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  LA_PSCR,                    LA_LSBRC, LA_RSBRC, LA_COMM, LA_DOT, LA_BSLS , LA_TILDE,
 //  '--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------'
